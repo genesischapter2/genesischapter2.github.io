@@ -86,8 +86,10 @@
   </head>
   <body class="text-center">
     <span id="hus-father" style="display: none">3333208546335</span>
+    <span id="hus-mother" style="display: none">74101352133851</span>
     <span id="hus" style="display: none">0107184440808</span>
     <span id="wife-father" style="display: none">078080312064</span>
+    <span id="wife-mother" style="display: none">04607027418</span>
     <span id="wife" style="display: none">08613443815</span>
 
     <div class="top-div">
@@ -441,19 +443,28 @@
                   <b>신랑 혼주 계좌</b>
 
                   &nbsp&nbsp&nbsp
-                  <a class="copy_btn" onclick="copyHusFather()">복사하기</a>
+                  <!-- <a class="copy_btn" onclick="copyHusFather()">복사하기</a> -->
                 </div>
 
                 <div class="modal-body section7-modal section7-modal-content">
                   카카오뱅크 3333-20-8546335 (조서현)
+                  <br />
+                  <a class="copy_btn" onclick="copyHusFather()">복사하기</a>
+                </div>
+                <div class="modal-body section7-modal section7-modal-content">
+                  농협 741013-52-133851 (김정옥)
+                  <br />
+                  <a class="copy_btn" onclick="copyHusMother()">복사하기</a>
                 </div>
                 <hr style="background-color: rgb(231, 231, 231)" width="60%" />
                 <div class="modal-body section7-modal section7-modal-content">
                   <b>신랑 계좌</b> &nbsp&nbsp&nbsp&nbsp
-                  <a class="copy_btn" onclick="copyHus()">복사하기</a>
+                  
                 </div>
                 <div class="modal-body section7-modal section7-modal-content">
                   농협 010-7184-4408-08 (조영근)
+                  <br />
+                  <a class="copy_btn" onclick="copyHus()">복사하기</a>
                 </div>
                 <br />
                 <div class="modal-footer">
@@ -511,19 +522,28 @@
                   <b>신부 혼주 계좌</b>
 
                   &nbsp&nbsp&nbsp
-                  <a class="copy_btn" onclick="copyWifeFather()">복사하기</a>
+                  <!-- <a class="copy_btn" onclick="copyWifeFather()">복사하기</a> -->
                 </div>
 
                 <div class="modal-body section7-modal section7-modal-content">
                   대구은행 078-08-031206-4 (박태준)
+                  <br />
+                  <a class="copy_btn" onclick="copyWifeFather()">복사하기</a>
+                </div>
+                <div class="modal-body section7-modal section7-modal-content">
+                  대구은행 046-07-027418 (김춘자)
+                  <br />
+                  <a class="copy_btn" onclick="copyWifeMother()">복사하기</a>
                 </div>
                 <hr style="background-color: rgb(231, 231, 231)" width="60%" />
                 <div class="modal-body section7-modal section7-modal-content">
                   <b>신부 계좌</b> &nbsp&nbsp&nbsp&nbsp
-                  <a class="copy_btn" onclick="copyWife()">복사하기</a>
+                  <!-- <a class="copy_btn" onclick="copyWife()">복사하기</a> -->
                 </div>
                 <div class="modal-body section7-modal section7-modal-content">
                   대구은행 086-13-443815 (박경민)
+                  <br />
+                  <a class="copy_btn" onclick="copyWife()">복사하기</a>
                 </div>
                 <br />
                 <div class="modal-footer">
@@ -777,6 +797,11 @@
     copyClipboard(reference_element);
   }
 
+  function copyHusMother() {
+    var reference_element = document.querySelector("#hus-mother").textContent;
+    copyClipboard(reference_element);
+  }
+
   function copyHus() {
     var reference_element = document.querySelector("#hus").textContent;
     copyClipboard(reference_element);
@@ -784,6 +809,11 @@
 
   function copyWifeFather() {
     var reference_element = document.querySelector("#wife-father").textContent;
+    copyClipboard(reference_element);
+  }
+
+  function copyWifeMother() {
+    var reference_element = document.querySelector("#wife-mother").textContent;
     copyClipboard(reference_element);
   }
 
